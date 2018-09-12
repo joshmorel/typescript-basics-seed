@@ -6,6 +6,8 @@ const pizza = {
 const toppings = ['pepperoni'];
 
 const order = {
-  pizza: pizza,
-  toppings: toppings
+  pizza,
+  toppings
 };
+
+console.log(order);
