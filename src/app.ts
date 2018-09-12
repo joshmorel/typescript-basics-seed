@@ -5,9 +5,11 @@ const pizza = {
 
 const toppings = ['pepperoni'];
 
-const order = {
-  pizza,
-  toppings
-};
+function createOrder(pizza: object, toppings: string[]) {
+  return {
+    pizza: pizza,
+    toppings: toppings
+  }
+}
 
-console.log(order);
+console.log(createOrder(pizza, toppings));
