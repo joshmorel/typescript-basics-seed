@@ -1,10 +1,11 @@
 const pizza = {
   name: 'Pepperoni',
   price: 14,
-  getName: function() {
+  getName() {
     return this.name;
   }
 };
+console.log(pizza.getName())
 
 const toppings = ['pepperoni'];
 
