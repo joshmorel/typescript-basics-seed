@@ -1,6 +1,9 @@
 const pizza = {
   name: 'Pepperoni',
-  price: 14
+  price: 14,
+  getName: function() {
+    return this.name;
+  }
 };
 
 const toppings = ['pepperoni'];
