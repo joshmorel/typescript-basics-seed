@@ -1,7 +1,11 @@
-function sumAll(arr: number[]) {
-  return arr.reduce((prev, next) => prev + next);
-}
+const pizza = {
+  name: 'Pepperoni',
+  toppings: ['pepperoni', 'bacon', 'mushrooms']
+};
 
-const sum = sumAll([1, 2, 3, 4, 5]);
+const { name: pizzaName, toppings: pizzaToppings } = pizza;
 
-console.log(sum);
+const [ firstTopping, secondTopping, thirdTopping ] = pizzaToppings
+
+console.log(pizzaName);
+console.log(firstTopping, secondTopping, thirdTopping);
