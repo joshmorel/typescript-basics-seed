@@ -1,16 +1,6 @@
-const pizzas = [{ name: 'Pepporoni', toppings: ['pepperoni'] }];
+function multiply(a:number, b:number) {
+  return a * b
+}
 
-const mappedPizzas = pizzas.map(pizza => pizza.name.toUpperCase());
-
-console.log(mappedPizzas);
-
-const pizza = {
-  name: 'Blazing Inferno',
-  getName: function() {
-    setTimeout(() => {
-      console.log(this.name);
-    }, 100)
-  }
-};
-
-pizza.getName();
+console.log(multiply(1,2))
+// console.log(multiply()) - won't work no default
