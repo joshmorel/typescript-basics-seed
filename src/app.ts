@@ -1,6 +1,11 @@
-function multiply(a:number, b = 1) {
-  return a * b
-}
+const pizza = {
+  name: 'Pepperoni',
+  price: 14
+};
 
-console.log(multiply(1,2))
-console.log(multiply(1))
+const toppings = ['pepperoni'];
+
+const order = {
+  pizza: pizza,
+  toppings: toppings
+};
