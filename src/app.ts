@@ -7,8 +7,8 @@ console.log(mappedPizzas);
 const pizza = {
   name: 'Blazing Inferno',
   getName: function() {
-    setTimeout(function () {
-      console.log(this.name); // no good!
+    setTimeout(() => {
+      console.log(this.name);
     }, 100)
   }
 };
