@@ -1,6 +1,6 @@
-function multiply(a:number, b:number) {
+function multiply(a:number, b = 1) {
   return a * b
 }
 
 console.log(multiply(1,2))
-// console.log(multiply()) - won't work no default
+console.log(multiply(1))
