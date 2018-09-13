@@ -1,6 +1,8 @@
-let pizzaSlice: 'small' | 'medium' | 'large' = 'small';
+type size = 'small' | 'medium' | 'large';
 
-const selectSize = (size: 'small' | 'medium' | 'large') => {
+let pizzaSlice: size = 'small';
+
+const selectSize = (size: size) => {
   pizzaSlice = size;
 };
 
