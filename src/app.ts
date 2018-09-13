@@ -2,10 +2,7 @@
 let sumOrder: (price: number, quantity?: number) => number;
 
 // implementation
-sumOrder = (x, y) => {
-  const q = y || 1;
-  return x * q;
-}
+sumOrder = (x, y = 1) => x * y;
 
 const sum = sumOrder(25);
 
