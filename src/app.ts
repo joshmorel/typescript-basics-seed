@@ -1,9 +1,10 @@
-type size = 'small' | 'medium' | 'large';
+type Size = 'small' | 'medium' | 'large';
+type Callback = (size: Size) => void;
 
-let pizzaSlice: size = 'small';
+let pizzaSlice: Size = 'small';
 
-const selectSize = (size: size) => {
-  pizzaSlice = size;
+const selectSize: Callback = (x) => {
+  pizzaSlice = x;
 };
 
 selectSize('large');
