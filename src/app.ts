@@ -1,5 +1,8 @@
-let pizza: [string, number, boolean];
+let pizzaSlice: 'small' | 'medium' | 'large' = 'small';
 
-pizza = ['Pepperoni', 20, true];
+const selectSize = (size: 'small' | 'medium' | 'large') => {
+  pizzaSlice = size;
+};
 
-console.log(pizza);
+selectSize('large');
+console.log(pizzaSlice);
