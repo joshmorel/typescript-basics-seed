@@ -1,12 +1,9 @@
-let coupon = 'pizza25';
+let pizzaSlice: string = 'small';
 
-function removeCoupon(): void {
-  // can only assign to
-  coupon = null;
+function selectSize(size: any): void {
+  pizzaSlice = size;
 }
 
-console.log(coupon);
+selectSize('meduim');
 
-removeCoupon();
-
-console.log(coupon);
+console.log(`Pizza size: ${pizzaSlice}`);

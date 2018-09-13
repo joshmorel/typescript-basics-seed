@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "strictNullChecks": false,
+    "strict": true,
     "outDir": "dist/"
   }
 }
