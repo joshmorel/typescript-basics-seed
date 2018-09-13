@@ -1,9 +1,9 @@
 let pizzaSlice: string = 'small';
 
-function selectSize(size: any): void {
+function selectSize(size: 'small' | 'medium' | 'large'): void {
   pizzaSlice = size;
 }
 
-selectSize('meduim');
+selectSize('medium');
 
 console.log(`Pizza size: ${pizzaSlice}`);
